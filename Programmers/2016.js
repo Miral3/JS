@@ -9,6 +9,6 @@ function solution(a, b) {
     weekday[5]="FRI";
     weekday[6]="SAT";
     var _date = new Date(2016, a-1, b);
-    answer = weekday[Date.getDay()];
+    answer = weekday[_date.getDay()];
     return answer;
 }
